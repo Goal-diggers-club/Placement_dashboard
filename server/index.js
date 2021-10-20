@@ -7,6 +7,12 @@ const db=mysql.createPool({
     password:"Goaldiggers@123#",
     database:"username_login",
 });
+app.get("/",(req,res)=>{
+    const sqlentry="INSERT INTO test_table (id,username) VALUES (6,'Rajat Gaikwad') ;"
+    db.query(sqlentry,(err,result)=>{
+        res.send("hello this is Toshit Kale");
+    })
+});
 app.listen(3001,()=>{
-    console.log("running good");
+    console.log("running wild");
 });
