@@ -10,7 +10,7 @@ const db=mysql.createPool({
 app.get("/",(req,res)=>{
     const sqlentry="INSERT INTO test_table (id,username) VALUES (6,'Rajat Gaikwad') ;"
     db.query(sqlentry,(err,result)=>{
-        res.send("hello this is Toshit Kale");
+        res.send("hello this is Gaurang Kumar");
     })
 });
 app.listen(3001,()=>{
